@@ -10,7 +10,7 @@ The benchmark covers four manipulation types (negation, entity substitution, qua
 
 ## Review Materials
 
-This anonymous repository provides four illustrative real/manipulated audio pairs, waveform visualizations, and a machine-readable manifest in [`audio_samples/samples.json`](audio_samples/samples.json). The examples cover the four manipulation types and are intended only to illustrate the task. They are not an evaluation set and do not constitute the ContextSpoof dataset.
+This anonymous repository provides four illustrative real/manipulated audio pairs, waveform visualizations, and a machine-readable manifest in [`audio_samples/samples.json`](audio_samples/samples.json). These sample audio pairs were selected from the actual ContextSpoof dataset. The examples cover the four manipulation types and are intended only to illustrate the task. They are not an evaluation set and do not constitute the complete ContextSpoof dataset.
 
 | Manipulation | Synthesis | Reintegration |
 | --- | --- | --- |
@@ -18,8 +18,6 @@ This anonymous repository provides four illustrative real/manipulated audio pair
 | Detail injection | Spark-TTS | Overlap-add |
 | Entity substitution | IndexTTS | Phase-aligned crossfade |
 | Negation | CosyVoice | Zero-crossing cut |
-
-The repository does not currently provide executable code, checkpoints, or the full dataset for review. The samples and their construction-time annotations are provided without a claim of independent human validation of semantic validity, perceptual naturalness, speaker consistency, or boundary quality.
 
 ## Availability
 
