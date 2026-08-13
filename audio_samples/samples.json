@@ -1,93 +1,98 @@
 {
-        "filename": "SSB07200261.wav",
-        "original_filename": "SSB07200261.wav",
-        "speaker_id": "SSB0720",
-        "duration_ms": 4160,
-        "is_tampered": true,
-        "tamper_details": [
-            {
-                "type": "replace",
-                "original_phrase": "七",
-                "tampered_phrase": "八",
-                "start_ms": 3830,
-                "end_ms": 4160
-            }
-        ],
-        "tamper_type": "数量篡改",
-        "original_transcript": "幺三零七四五九七七六七",
-        "tampered_transcript": "幺三零七四五九七七六八",
-        "llm_model": "qwen-custom-prompt",
-        "alm_model": "f5-tts",
-        "reintegration_method": "crossfade",
-        "sample_rate": 16000
+  "schema_version": "1.0",
+  "purpose": "Illustrative review samples only; not an evaluation set or the full ContextSpoof dataset.",
+  "samples": [
+    {
+      "id": "quantity-f5tts-crossfade",
+      "source_utterance_id": "SSB07200261",
+      "real_audio": "SSB07200261_Real.wav",
+      "manipulated_audio": "SSB07200261_Quantity_F5tts_Crossfade.wav",
+      "visualization": "SSB07200261_viz.png",
+      "manipulation_type": "quantity_manipulation",
+      "original_transcript": "幺三零七四五九七七六七",
+      "modified_transcript": "幺三零七四五九七七六八",
+      "changed_spans": [
+        {
+          "operation": "replace",
+          "original_text": "七",
+          "modified_text": "八",
+          "start_ms": 3830,
+          "end_ms": 4160
+        }
+      ],
+      "tts_system": "F5-TTS",
+      "reintegration_method": "crossfade",
+      "manipulated_duration_ms": 4160,
+      "manipulated_sample_rate_hz": 16000
     },
-{
-        "filename": "SSB09660203.wav",
-        "original_filename": "SSB09660203.wav",
-        "speaker_id": "SSB0966",
-        "duration_ms": 2920,
-        "is_tampered": true,
-        "tamper_details": [
-            {
-                "type": "insert",
-                "original_phrase": "",
-                "tampered_phrase": "特点",
-                "start_ms": 2440,
-                "end_ms": 2920
-            }
-        ],
-        "tamper_type": "细节注入",
-        "original_transcript": "海口市的楼盘有什么",
-        "tampered_transcript": "海口市的楼盘有什么特点",
-        "llm_model": "qwen-custom-prompt",
-        "alm_model": "spark-tts",
-        "reintegration_method": "overlap_add",
-        "sample_rate": 16000
+    {
+      "id": "detail-injection-sparktts-overlap-add",
+      "source_utterance_id": "SSB09660203",
+      "real_audio": "SSB09660203_Real.wav",
+      "manipulated_audio": "SSB09660203_Detail_Sparktts_Overlapadd.wav",
+      "visualization": "SSB09660203_viz.png",
+      "manipulation_type": "detail_injection",
+      "original_transcript": "海口市的楼盘有什么",
+      "modified_transcript": "海口市的楼盘有什么特点",
+      "changed_spans": [
+        {
+          "operation": "insert",
+          "original_text": "",
+          "modified_text": "特点",
+          "start_ms": 2440,
+          "end_ms": 2920
+        }
+      ],
+      "tts_system": "Spark-TTS",
+      "reintegration_method": "overlap_add",
+      "manipulated_duration_ms": 2920,
+      "manipulated_sample_rate_hz": 16000
     },
-{
-        "filename": "SSB13990059.wav",
-        "original_filename": "SSB13990059.wav",
-        "speaker_id": "SSB1399",
-        "duration_ms": 5370,
-        "is_tampered": true,
-        "tamper_details": [
-            {
-                "type": "replace",
-                "original_phrase": "北京",
-                "tampered_phrase": "上海",
-                "start_ms": 3720,
-                "end_ms": 4140
-            }
-        ],
-        "tamper_type": "实体替换",
-        "original_transcript": "有别于降息降准等政策利好带给北京市场的东风",
-        "tampered_transcript": "有别于降息降准等政策利好带给上海市场的东风",
-        "llm_model": "qwen-custom-prompt",
-        "alm_model": "indextts-vllm",
-        "reintegration_method": "phase_aligned_crossfade",
-        "sample_rate": 16000
+    {
+      "id": "entity-indextts-phase-aligned-crossfade",
+      "source_utterance_id": "SSB13990059",
+      "real_audio": "SSB13990059_Real.wav",
+      "manipulated_audio": "SSB13990059_Entity _Indextts_phasealignedcrossfade.wav",
+      "visualization": "SSB13990059_viz.png",
+      "manipulation_type": "entity_substitution",
+      "original_transcript": "有别于降息降准等政策利好带给北京市场的东风",
+      "modified_transcript": "有别于降息降准等政策利好带给上海市场的东风",
+      "changed_spans": [
+        {
+          "operation": "replace",
+          "original_text": "北京",
+          "modified_text": "上海",
+          "start_ms": 3720,
+          "end_ms": 4140
+        }
+      ],
+      "tts_system": "IndexTTS",
+      "reintegration_method": "phase_aligned_crossfade",
+      "manipulated_duration_ms": 5370,
+      "manipulated_sample_rate_hz": 16000
     },
-
-{
-        "filename": "SSB19350070.wav",
-        "original_filename": "SSB19350070.wav",
-        "speaker_id": "SSB1935",
-        "duration_ms": 3753,
-        "is_tampered": true,
-        "tamper_details": [
-            {
-                "type": "replace",
-                "original_phrase": "默许",
-                "tampered_phrase": "反对",
-                "start_ms": 2969,
-                "end_ms": 3315
-            }
-        ],
-        "tamper_type": "否定篡改",
-        "original_transcript": "尽管国字号对运动员恋爱持默许态度",
-        "tampered_transcript": "尽管国字号对运动员恋爱持反对态度",
-        "llm_model": "qwen-custom-prompt",
-        "alm_model": "cosyvoice",
-        "reintegration_method": "cut_zero_crossing",
-        "sample_rate": 16000
-    },
+    {
+      "id": "negation-cosyvoice-zero-crossing-cut",
+      "source_utterance_id": "SSB19350070",
+      "real_audio": "SSB19350070_Real.wav",
+      "manipulated_audio": "SSB19350070_Negation_Cosyvoice_cut.wav",
+      "visualization": "SSB19350070_viz.png",
+      "manipulation_type": "negation",
+      "original_transcript": "尽管国字号对运动员恋爱持默许态度",
+      "modified_transcript": "尽管国字号对运动员恋爱持反对态度",
+      "changed_spans": [
+        {
+          "operation": "replace",
+          "original_text": "默许",
+          "modified_text": "反对",
+          "start_ms": 2969,
+          "end_ms": 3315
+        }
+      ],
+      "tts_system": "CosyVoice",
+      "reintegration_method": "zero_crossing_cut",
+      "manipulated_duration_ms": 3753,
+      "manipulated_sample_rate_hz": 16000
+    }
+  ]
+}
