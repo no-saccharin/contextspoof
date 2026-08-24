@@ -1,12 +1,16 @@
 {
   "schema_version": "1.0",
-  "purpose": "Illustrative review samples only; not an evaluation set or the full ContextSpoof dataset.",
+  "benchmark_name": "ContextSpoof",
+  "artifact_role": "double_blind_review_companion",
+  "purpose": "Representative sample pairs for qualitative inspection during double-blind review.",
+  "visualization_note": "Waveform previews show the source audio, construction-time reference interval, and a model prediction for qualitative illustration.",
+  "pair_count": 4,
   "samples": [
     {
       "id": "quantity-f5tts-crossfade",
       "source_utterance_id": "SSB07200261",
       "real_audio": "SSB07200261_Real.wav",
-      "manipulated_audio": "SSB07200261_Quantity_F5tts_Crossfade.wav",
+      "manipulated_audio": "SSB07200261_Quantity_F5TTS_Crossfade.wav",
       "visualization": "SSB07200261_viz.png",
       "manipulation_type": "quantity_manipulation",
       "original_transcript": "幺三零七四五九七七六七",
@@ -29,7 +33,7 @@
       "id": "detail-injection-sparktts-overlap-add",
       "source_utterance_id": "SSB09660203",
       "real_audio": "SSB09660203_Real.wav",
-      "manipulated_audio": "SSB09660203_Detail_Sparktts_Overlapadd.wav",
+      "manipulated_audio": "SSB09660203_Detail_SparkTTS_OverlapAdd.wav",
       "visualization": "SSB09660203_viz.png",
       "manipulation_type": "detail_injection",
       "original_transcript": "海口市的楼盘有什么",
@@ -40,19 +44,19 @@
           "original_text": "",
           "modified_text": "特点",
           "start_ms": 2440,
-          "end_ms": 2920
+          "end_ms": 2910
         }
       ],
       "tts_system": "Spark-TTS",
       "reintegration_method": "overlap_add",
-      "manipulated_duration_ms": 2920,
+      "manipulated_duration_ms": 2910,
       "manipulated_sample_rate_hz": 16000
     },
     {
       "id": "entity-indextts-phase-aligned-crossfade",
       "source_utterance_id": "SSB13990059",
       "real_audio": "SSB13990059_Real.wav",
-      "manipulated_audio": "SSB13990059_Entity _Indextts_phasealignedcrossfade.wav",
+      "manipulated_audio": "SSB13990059_Entity_IndexTTS_PhaseAlignedCrossfade.wav",
       "visualization": "SSB13990059_viz.png",
       "manipulation_type": "entity_substitution",
       "original_transcript": "有别于降息降准等政策利好带给北京市场的东风",
@@ -75,7 +79,7 @@
       "id": "negation-cosyvoice-zero-crossing-cut",
       "source_utterance_id": "SSB19350070",
       "real_audio": "SSB19350070_Real.wav",
-      "manipulated_audio": "SSB19350070_Negation_Cosyvoice_cut.wav",
+      "manipulated_audio": "SSB19350070_Negation_CosyVoice_ZeroCrossingCut.wav",
       "visualization": "SSB19350070_viz.png",
       "manipulation_type": "negation",
       "original_transcript": "尽管国字号对运动员恋爱持默许态度",
