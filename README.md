@@ -10,6 +10,12 @@ The benchmark covers four manipulation types (negation, entity substitution, qua
 
 For event-level evaluation, a predicted manipulated span is counted as correct only when both its onset and offset are within 200 ms of the construction-time reference span. Segment-level evaluation additionally uses an IoU threshold of 0.5. For boundary-error analysis, each reference span independently selects the available predicted span of highest IoU; short events are reference spans shorter than 300 ms. Because one clip may contain several disjoint reference spans, event counts and clip counts are reported separately in the paper.
 
+### Duration Distribution
+
+![Normalized train and test audio-duration distributions](duration_distribution.png)
+
+The figure compares the normalized distribution of total clip duration in the training-side data (training and validation combined) and the test set.
+
 ## Review Artifact
 
 This repository is a compact companion artifact for double-blind review. It supports qualitative inspection of representative source and manipulated pairs and verification of the sample metadata format through four audio pairs, waveform visualizations, and a machine-readable manifest in [`audio_samples/samples.json`](audio_samples/samples.json). The examples were selected from ContextSpoof to cover all four manipulation types; they are reviewer-facing examples rather than evaluation samples.
@@ -29,13 +35,22 @@ Each waveform preview juxtaposes the source audio, the construction-time referen
 2. Use `*_viz.png` to inspect the construction-time manipulated interval.
 3. Check the transcript edit, timestamps, TTS system, and reintegration method in `audio_samples/samples.json`.
 
-## Archival Release
+## Post-Acceptance Release Plan
 
-Upon acceptance, we plan to publish the archival research package, including the ContextSpoof dataset, versioned prompts and model configurations, split manifests and metadata, training and evaluation code, and baseline implementations. Redistribution will follow the licenses governing the source corpus and third-party models.
+Upon acceptance, we plan to prepare a versioned archival release containing:
+
+1. the ContextSpoof dataset and integrity checksums;
+2. the prompts, generation settings, and model configurations used to construct the benchmark;
+3. source-utterance-disjoint split manifests and machine-readable metadata;
+4. training, inference, and evaluation code with environment specifications; and
+5. the baseline implementations and experiment configurations used in the paper.
+
+The release will preserve the evaluation protocol described in the paper and document the provenance of each artifact. The final contents and redistribution terms will follow the licenses of AISHELL-3 and the third-party LLM and TTS systems.
 
 ## Repository Layout
 
 ```text
+duration_distribution.png       # Train/test clip-duration distribution
 audio_samples/
   samples.json                  # Sample-pair manifest and construction-time spans
   *_Real.wav                    # Source audio previews
