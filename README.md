@@ -1,7 +1,5 @@
 # ContextSpoof
 
-Anonymous submission to MMM 2027.
-
 ## Overview
 
 ContextSpoof is a Mandarin benchmark for temporal localization of LLM-guided partial speech manipulation. It studies recordings in which one or more short semantic units are edited, synthesized with zero-shot TTS, and reintegrated into an otherwise bona fide utterance. Construction-time labels specify the manipulated spans.
