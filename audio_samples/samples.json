@@ -1,9 +1,10 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "benchmark_name": "ContextSpoof",
   "artifact_role": "double_blind_review_companion",
   "purpose": "Representative sample pairs for qualitative inspection during double-blind review.",
   "visualization_note": "Waveform previews show the source audio, construction-time reference interval, and a model prediction for qualitative illustration.",
+  "audio_format_note": "Source previews are 44.1-kHz mono; manipulated previews are 16-kHz mono. Files are unchanged and are not sample-aligned pairs.",
   "pair_count": 4,
   "samples": [
     {
@@ -13,6 +14,9 @@
       "manipulated_audio": "SSB07200261_Quantity_F5TTS_Crossfade.wav",
       "visualization": "SSB07200261_viz.png",
       "manipulation_type": "quantity_manipulation",
+      "manipulation_label": "Quantity Tampering",
+      "real_duration_ms": 4795,
+      "real_sample_rate_hz": 44100,
       "original_transcript": "幺三零七四五九七七六七",
       "modified_transcript": "幺三零七四五九七七六八",
       "changed_spans": [
@@ -36,6 +40,9 @@
       "manipulated_audio": "SSB09660203_Detail_SparkTTS_OverlapAdd.wav",
       "visualization": "SSB09660203_viz.png",
       "manipulation_type": "detail_injection",
+      "manipulation_label": "Detail Injection",
+      "real_duration_ms": 2780,
+      "real_sample_rate_hz": 44100,
       "original_transcript": "海口市的楼盘有什么",
       "modified_transcript": "海口市的楼盘有什么特点",
       "changed_spans": [
@@ -59,6 +66,9 @@
       "manipulated_audio": "SSB13990059_Entity_IndexTTS_PhaseAlignedCrossfade.wav",
       "visualization": "SSB13990059_viz.png",
       "manipulation_type": "entity_substitution",
+      "manipulation_label": "Entity Replacement",
+      "real_duration_ms": 5811,
+      "real_sample_rate_hz": 44100,
       "original_transcript": "有别于降息降准等政策利好带给北京市场的东风",
       "modified_transcript": "有别于降息降准等政策利好带给上海市场的东风",
       "changed_spans": [
@@ -82,6 +92,9 @@
       "manipulated_audio": "SSB19350070_Negation_CosyVoice_ZeroCrossingCut.wav",
       "visualization": "SSB19350070_viz.png",
       "manipulation_type": "negation",
+      "manipulation_label": "Negation Tampering",
+      "real_duration_ms": 4003,
+      "real_sample_rate_hz": 44100,
       "original_transcript": "尽管国字号对运动员恋爱持默许态度",
       "modified_transcript": "尽管国字号对运动员恋爱持反对态度",
       "changed_spans": [
